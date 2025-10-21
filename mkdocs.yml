@@ -1,0 +1,79 @@
+site_name: BlackShift Docs
+site_description: Documentation for BlackShift AI Solutions and Integrations
+site_url: https://docs.blackshift.ai
+repo_url: https://github.com/blackshiftrobotics/blackshiftrobotics
+repo_name: blackshiftrobotics
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: default
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/white-balance-sunny
+        name: Switch to light mode
+  logo: assets/blackshift.webp
+  favicon: assets/blackshift.webp
+  font:
+    text: "Poppins"
+    code: "Fira Code"
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Overview: getting-started/overview.md
+      - Installation: getting-started/installation.md
+      - Configuration: getting-started/configuration.md
+  - AI Services:
+      - Image Processing: ai-services/image-processing.md
+      - NLP & Chatbots: ai-services/nlp-chatbots.md
+      - Automation & DevOps: ai-services/devops-automation.md
+  - Support: support.md
+  - Blog: blog.md
+  - About: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/blackshiftrobotics
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/blackshiftai
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/blackshiftai
+  copyright: "© 2025 BlackShift AI. All rights reserved."
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
